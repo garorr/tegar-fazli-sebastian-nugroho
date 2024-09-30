@@ -6,9 +6,17 @@
     <title>TEGAR FAZLI</title>
 </head>
 <style>
+
     body {
         text-align: center;
         font-family: Arial, sans-serif;
+        background-color: blue;
+    }
+    .on {
+        background: white;
+    }
+    .of {
+        background: #333;
     }
     .lamp {
         width: 100px;
@@ -29,13 +37,13 @@
         cursor: pointer;
     }
 </style>
-<body>
+<body id="body">
     
     <h1> Lampu Hidup atau Mati</h1>
 
     <div id="lamp" class="lamp off"></div>
     <button onclick="toggleLamp()">Toggle Lamp</button>
-
+    <button onclick="toggleback()">Toggle background</button>
     <script>
         function toggleLamp() {
             const lamp = document.getElementById('lamp');
@@ -47,6 +55,17 @@
                 lamp.classList.add('off');
             }
         }
+
+        function toggleback() {
+            const body = document.getElementById('body');
+            if (body.classList.contains('off')) {
+                body.classList.remove('off');
+                body.classList.add('on');
+            } else {
+                body.classList.remove('on');
+                body.classList.add('off');
+            }
+        }
     </script>
-</body>
+</body>s 
 </html>
