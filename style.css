@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: blue;
+}
+.on {
+    background: white;
+}
+.of {
+    background: #333;
+}
+.lamp {
+    width: 100px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: #333;
+    border-radius: 50px;
+}
+.lamp.on {
+    background-color: yellow;
+}
+.lamp.off {
+    background-color: #333;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

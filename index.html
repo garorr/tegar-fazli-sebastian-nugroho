@@ -4,68 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEGAR FAZLI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-
-    body {
-        text-align: center;
-        font-family: Arial, sans-serif;
-        background-color: blue;
-    }
-    .on {
-        background: white;
-    }
-    .of {
-        background: #333;
-    }
-    .lamp {
-        width: 100px;
-        height: 200px;
-        margin: 50px auto;
-        background-color: #333;
-        border-radius: 50px;
-    }
-    .lamp.on {
-        background-color: yellow;
-    }
-    .lamp.off {
-        background-color: #333;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-</style>
 <body id="body">
     
-    <h1> Lampu Hidup atau Mati</h1>
+   
 
     <div id="lamp" class="lamp off"></div>
     <button onclick="toggleLamp()">Toggle Lamp</button>
-    <button onclick="toggleback()">Toggle background</button>
-    <script>
-        function toggleLamp() {
-            const lamp = document.getElementById('lamp');
-            if (lamp.classList.contains('off')) {
-                lamp.classList.remove('off');
-                lamp.classList.add('on');
-            } else {
-                lamp.classList.remove('on');
-                lamp.classList.add('off');
-            }
-        }
-
-        function toggleback() {
-            const body = document.getElementById('body');
-            if (body.classList.contains('off')) {
-                body.classList.remove('off');
-                body.classList.add('on');
-            } else {
-                body.classList.remove('on');
-                body.classList.add('off');
-            }
-        }
-    </script>
-</body>s 
+    <button onclick="toggleback()">Toggle Background</button>
+    <script src="aa.js"></script>
+</body>
 </html>
